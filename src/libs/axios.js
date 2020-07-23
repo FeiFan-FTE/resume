@@ -2,7 +2,7 @@ import axios from 'axios'
 import route from '@/router/index'
 import { getUrlString } from '@/libs/tools'
 import { Notice } from 'view-design';
-import { getSession, setToken, getToken } from '@/libs/util'
+import { getToken } from '@/libs/util'
 
 class HttpRequest {
     constructor(baseUrl = baseURL) {
@@ -13,9 +13,9 @@ class HttpRequest {
 
         const config = {
             baseURL: splitRouter(),
-            headers: {
-                Authorization: `Bearer ${getToken()}`
-            }
+            // headers: {
+            //     Authorization: `Bearer ${getToken()}`
+            // }
         }
         return config
     }
