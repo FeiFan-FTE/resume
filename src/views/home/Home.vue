@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HelloWorld /> -->
+    <FileExplorer></FileExplorer>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-
+  //_c -> src/compoents
+import FileExplorer from '../fileExplorer/FileExplorer.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    FileExplorer
   }
 }
 </script>
